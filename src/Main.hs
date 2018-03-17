@@ -3,12 +3,18 @@ import System.Environment
 import System.Directory
 import System.IO
 import System.Process
+import System.FilePath.Posix
 
 import qualified Data.List as DL
 
-fileName :: FilePath
-fileName = "/home/henry/HENFILES/.webLinks"
 
+
+fileName :: FilePath
+fileName = "/home/henry/.lnkpLinks"
+
+--
+--Function initializes link file if it doesn't exist
+--Parses command line input for commands and dispatches based on them
 main :: IO ()
 main = do
     fileExist <- doesFileExist fileName
@@ -23,14 +29,12 @@ main = do
             | args == [] = list []
             | isInteger (head args) = open [head args] 
             | otherwise =  do (cmd:arguments) <- getArgs
-                              
                               ----------------------------------                              
                               let runLookup chosenCommand = 
                                            case chosenCommand of
                                                Just realCommand -> realCommand arguments
                                                Nothing -> putStrLn ("Command \"" ++ cmd ++ "\" not found") >> help []
                               ---------------------------------
-                              
                               runLookup (lookup cmd dispatch) --Run maybe lookup
 
 
@@ -57,12 +61,17 @@ list [] = do
     contents <- readFile fileName 
     putStrLn $ addLnNums contents
 
+--Contains the list of commands, and the functions to run them
 dispatch =  [ ("list",list)
             , ("add",add)
             , ("open",open)
             , ("remove",remove)
             , ("help", help)
             ]
+
+--function shows help for commands
+--
+--TODO : implement help for every command
 help [] = do putStr $ unlines [""
                               ,"LinkKeeper (lnkp) Command help"
                               ,"----------(Commands)----------"
@@ -73,7 +82,6 @@ help [] = do putStr $ unlines [""
                               ,"remove (link number)  | removes link by number"
                               ,"-----------------------------"
                               ,""]
-            
 
 
 addLnNums list = unlines $ zipWith (\n a -> "<"++(show n)++"> "++ a) [0..] (lines list)
