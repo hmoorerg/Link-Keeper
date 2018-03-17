@@ -14,26 +14,26 @@
   (major1) == 1 && (major2) <  2 || \
   (major1) == 1 && (major2) == 2 && (minor) <= 2)
 
-/* tool alex-3.1.7 */
-#define TOOL_VERSION_alex "3.1.7"
+/* package process-1.2.3.0 */
+#define VERSION_process "1.2.3.0"
+#define MIN_VERSION_process(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  2 || \
+  (major1) == 1 && (major2) == 2 && (minor) <= 3)
+
+/* tool alex-3.2.1 */
+#define TOOL_VERSION_alex "3.2.1"
 #define MIN_TOOL_VERSION_alex(major1,major2,minor) (\
   (major1) <  3 || \
-  (major1) == 3 && (major2) <  1 || \
-  (major1) == 3 && (major2) == 1 && (minor) <= 7)
+  (major1) == 3 && (major2) <  2 || \
+  (major1) == 3 && (major2) == 2 && (minor) <= 1)
 
-/* tool cpphs-1.20.1 */
-#define TOOL_VERSION_cpphs "1.20.1"
-#define MIN_TOOL_VERSION_cpphs(major1,major2,minor) (\
-  (major1) <  1 || \
-  (major1) == 1 && (major2) <  20 || \
-  (major1) == 1 && (major2) == 20 && (minor) <= 1)
-
-/* tool gcc-5.4.0 */
-#define TOOL_VERSION_gcc "5.4.0"
+/* tool gcc-7 */
+#define TOOL_VERSION_gcc "7"
 #define MIN_TOOL_VERSION_gcc(major1,major2,minor) (\
-  (major1) <  5 || \
-  (major1) == 5 && (major2) <  4 || \
-  (major1) == 5 && (major2) == 4 && (minor) <= 0)
+  (major1) <  7 || \
+  (major1) == 7 && (major2) <  0 || \
+  (major1) == 7 && (major2) == 0 && (minor) <= 0)
 
 /* tool ghc-7.10.3 */
 #define TOOL_VERSION_ghc "7.10.3"
@@ -91,12 +91,12 @@
   (major1) == 0 && (major2) <  29 || \
   (major1) == 0 && (major2) == 29 && (minor) <= 1)
 
-/* tool strip-2.26 */
-#define TOOL_VERSION_strip "2.26"
+/* tool strip-2.29 */
+#define TOOL_VERSION_strip "2.29"
 #define MIN_TOOL_VERSION_strip(major1,major2,minor) (\
   (major1) <  2 || \
-  (major1) == 2 && (major2) <  26 || \
-  (major1) == 2 && (major2) == 26 && (minor) <= 0)
+  (major1) == 2 && (major2) <  29 || \
+  (major1) == 2 && (major2) == 29 && (minor) <= 0)
 
-#define CURRENT_PACKAGE_KEY "linkK_8PufJLPXghU6JuT0Be5OtU"
+#define CURRENT_PACKAGE_KEY "lnkp_3YjWFDa9FB14x0ZwXyFVj7"
 
