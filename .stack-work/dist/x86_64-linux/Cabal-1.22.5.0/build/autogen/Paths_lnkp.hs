@@ -17,7 +17,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/henry/HENFILES/code/haskell/lnkp/.stack-work/install/x86_64-linux/lts-6.12/7.10.3/bin"
-libdir     = "/home/henry/HENFILES/code/haskell/lnkp/.stack-work/install/x86_64-linux/lts-6.12/7.10.3/lib/x86_64-linux-ghc-7.10.3/lnkp-0.1.0.0-3YjWFDa9FB14x0ZwXyFVj7"
+libdir     = "/home/henry/HENFILES/code/haskell/lnkp/.stack-work/install/x86_64-linux/lts-6.12/7.10.3/lib/x86_64-linux-ghc-7.10.3/lnkp-0.1.0.0-GNYryzMqP6u6gzzcCQilzg"
 datadir    = "/home/henry/HENFILES/code/haskell/lnkp/.stack-work/install/x86_64-linux/lts-6.12/7.10.3/share/x86_64-linux-ghc-7.10.3/lnkp-0.1.0.0"
 libexecdir = "/home/henry/HENFILES/code/haskell/lnkp/.stack-work/install/x86_64-linux/lts-6.12/7.10.3/libexec"
 sysconfdir = "/home/henry/HENFILES/code/haskell/lnkp/.stack-work/install/x86_64-linux/lts-6.12/7.10.3/etc"

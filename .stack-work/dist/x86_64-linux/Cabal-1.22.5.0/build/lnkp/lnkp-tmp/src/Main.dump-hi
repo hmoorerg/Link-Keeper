@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-02-20 20:23:49.299408 UTC
+2018-03-17 04:09:51.665741 UTC
 
 interface main@main:Main 7103
-  interface hash: bc806237955b558311e27e6ffd54a505
-  ABI hash: be5f5b767607176b0cea38463a6281bc
+  interface hash: ef73d0dc19788f3ce81b9e94fcca1fc6
+  ABI hash: 0bc389423e505a65b21002fa27eaf326
   export-list hash: 6dfcebd013dbdf28d219021e28fe8664
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 481bbc5403282c533cde312d630d9613
@@ -23,7 +23,7 @@ exports:
   Main.main
   Main.open
   Main.remove
-module dependencies: AppModules
+module dependencies:
 package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
                       base-4.8.2.0* deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
                       directory-1.2.2.0@direc_0hFG6ZxK1nk4zsyOqbNHfm*
@@ -51,11 +51,10 @@ import  -/  base-4.8.2.0:System.Environment ba6e36000c8274703cf7786fbe8d0f6c
 import  -/  base-4.8.2.0:System.IO 0248c1e850b7ea124cf7a2e1669ebf67
 import  -/  base-4.8.2.0:Text.Read ef0ef92fb7358ae94bab089940adfd2a
 import  -/  directory-1.2.2.0@direc_0hFG6ZxK1nk4zsyOqbNHfm:System.Directory a1cb5f7691abbe7dfb17405086904f1c
+import  -/  filepath-1.4.0.0@filep_Ey7a1in9roBAE8bUFJ5R9m:System.FilePath.Posix da2bfc0e51fee241a6f2334547c9597d
 import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
 import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type 371e90fe753f08ddedf0d2657a9ef5c4
-import  -/  AppModules c690bde95fde784208ab2cb85e4f8055
-  exports: 1e51e1ca10f94a1b3ad5308e659c77d6
 import  -/  process-1.2.3.0@proce_52AgREEfSrnJLlkGV9YZZJ:System.Process 8f5da958699421ce933a2006dea644fe
 cac2c9348ecc3c39129cc3a7f1d0967a
   $wa ::
@@ -75,14 +74,14 @@ fee13f23264954d596268462f6a38c42
 f08f6649fc4df8b210deec1f34fb9869
   $wdeleteAt :: GHC.Prim.Int# -> [a] -> [a]
   {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0] -}
-d4ccc9f440ab8ab73af79c353612f045
+2dcaeda245a7dd1d89bd16b91786bf53
   add :: [[GHC.Types.Char]] -> GHC.Types.IO ()
   {- Arity: 2, Strictness: <S,1*U><L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.add1
                   `cast`
                 (<[[GHC.Types.Char]]>_R ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-6a973c690d335de196be40b0e343812e
+29710977774b1f3a7ed540a9f261a968
   add1 ::
     [[GHC.Types.Char]]
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -121,7 +120,7 @@ d4ccc9f440ab8ab73af79c353612f045
 a802384f66492425118cd13a37472fb7
   add2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "\n"#) -}
-3aeec25c7b09f7ad366381972303a62b
+0bcb54f4a278cec4e026ce24294ca6f5
   add3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -190,7 +189,7 @@ bb15be4af64079030f01f85d11e922cc
      Unfolding: InlineRule (2, True, False)
                 (\ @ a w :: GHC.Types.Int w1 :: [a] ->
                  case w of ww { GHC.Types.I# ww1 -> Main.$wdeleteAt @ a ww1 w1 }) -}
-b2b9c6ab88a8b1adb93af31b0e9852aa
+c82c9f553d9d59cc6942615926c5203b
   dispatch ::
     [([GHC.Types.Char], [[GHC.Types.Char]] -> GHC.Types.IO ())]
   {- Strictness: m2,
@@ -198,7 +197,7 @@ b2b9c6ab88a8b1adb93af31b0e9852aa
                    @ ([GHC.Types.Char], [[GHC.Types.Char]] -> GHC.Types.IO ())
                    Main.dispatch43
                    Main.dispatch1) -}
-a090bc94bb9cbc030322c289f26f2d54
+d3e873da6ae5449d4633a8fac6c72179
   dispatch1 ::
     [([GHC.Types.Char], [[GHC.Types.Char]] -> GHC.Types.IO ())]
   {- Strictness: m2,
@@ -267,7 +266,7 @@ ab19cefaf3ba33c6f76c03ac679f818b
                    @ GHC.Base.String
                    (GHC.Types.[] @ GHC.Types.Char)
                    (GHC.Types.[] @ GHC.Base.String)) -}
-5da7d0b0e08e446742ca5b76a34c2b7e
+2142338068ad53af20b2301be1eff6bc
   dispatch2 ::
     [([GHC.Types.Char], [[GHC.Types.Char]] -> GHC.Types.IO ())]
   {- Strictness: m2,
@@ -310,7 +309,7 @@ c4f600ae7e31cd2499c333d6848b173d
 e1ed5825c6e6d8780e8bf15dcee426ff
   dispatch28 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "help"#) -}
-10b5d751873dae2d206187b953d03c63
+2d8514bf41df9ffc15e9146e053b747f
   dispatch29 ::
     ([GHC.Types.Char], [GHC.Base.String] -> GHC.Types.IO ())
   {- Strictness: m,
@@ -318,7 +317,7 @@ e1ed5825c6e6d8780e8bf15dcee426ff
                   Main.dispatch30
                     `cast`
                   (<[GHC.Base.String]>_R ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R)))) -}
-4778ca47d25092f38057b00aea35ffe7
+41385d083ed1aeabaf08c528f9ff3784
   dispatch3 ::
     [([GHC.Types.Char], [[GHC.Types.Char]] -> GHC.Types.IO ())]
   {- Strictness: m2,
@@ -326,7 +325,7 @@ e1ed5825c6e6d8780e8bf15dcee426ff
                    @ ([GHC.Types.Char], [[GHC.Types.Char]] -> GHC.Types.IO ())
                    Main.dispatch29
                    Main.dispatch4) -}
-effb060a732315bb2ac1ab7ad4402419
+e22bdc8e2f0f18a35c0978cc62db6c68
   dispatch30 ::
     [GHC.Base.String]
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -425,7 +424,7 @@ ef6ed568ea7b22c62868ae406187bea9
 7e2a3fdf3a5da2e4303f139ef9cf1a68
   dispatch36 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "remove"#) -}
-5a87c645b22e1f98bab0f31e5087b36b
+6eed8168c2a3a3f62dc369c2990a5eb0
   dispatch37 ::
     ([GHC.Types.Char], [GHC.Base.String] -> GHC.Types.IO ())
   {- Strictness: m,
@@ -433,7 +432,7 @@ ef6ed568ea7b22c62868ae406187bea9
                   Main.dispatch38
                     `cast`
                   (<[GHC.Base.String]>_R ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R)))) -}
-3dfc5b42af7b9b647a12ea44cf2762e6
+1cc0eb1ebf5732ea6341efe508e0c102
   dispatch38 ::
     [GHC.Base.String]
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -518,7 +517,7 @@ df9fc9743c48862cc74f544408fc2091
 ff9ece4747a792e3373ecf7c0f3cb613
   dispatch40 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "open"#) -}
-d4cfe914aecad99ffe2d841d322a23cc
+8777e6053b70c5194b6930f0670e2a05
   dispatch41 ::
     ([GHC.Types.Char], [[GHC.Types.Char]] -> GHC.Types.IO ())
   {- Strictness: m,
@@ -530,7 +529,7 @@ d4cfe914aecad99ffe2d841d322a23cc
 9cf2352b445142823530a35eee064072
   dispatch42 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "add"#) -}
-255ce799d997e710dd5ffd5646436617
+c5a7e82c5ae4683ec820e02178fa8e22
   dispatch43 ::
     ([GHC.Types.Char], [[GHC.Types.Char]] -> GHC.Types.IO ())
   {- Strictness: m,
@@ -539,7 +538,7 @@ d4cfe914aecad99ffe2d841d322a23cc
                     `cast`
                   (<[[GHC.Types.Char]]>_R
                    ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R)))) -}
-27af1d24ba866635314352e41a0ef839
+81decf2db86b147fa5f689cdf7778dd7
   dispatch44 ::
     [t]
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -614,10 +613,10 @@ dc518b92b212c43e945aee634a280f95
 7770d8edf74645d5a58093ecfdf75717
   dispatch9 :: GHC.Base.String
   {- Unfolding: (Data.OldList.unlines Main.dispatch10) -}
-87aba44e982def380828772c207dceb0
+28025328bd8cf26416f271dbc8b303a1
   fileName :: GHC.IO.FilePath
   {- Unfolding: (GHC.CString.unpackCString#
-                   "/home/henry/HENFILES/.webLinks"#) -}
+                   "/home/henry/.lnkpLinks"#) -}
 9783eea9de657d165391deb528f5f64a
   help :: [t] -> GHC.Types.IO ()
   {- Arity: 2, Strictness: <S,1*U><L,U>,
@@ -653,19 +652,19 @@ dc518b92b212c43e945aee634a280f95
                    @ GHC.Integer.Type.Integer
                    (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                       @ GHC.Integer.Type.Integer)) -}
-9c867ac2206303835a3fc6c9782cc275
+7bcccc084e7fa1e9b18a9096fe8a51b7
   list :: [t] -> GHC.Types.IO ()
   {- Arity: 2, Strictness: <S,1*U><L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.dispatch44
                   `cast`
                 (forall t. <[t]>_R ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-6ae7b50d37da7168b019184cf5ec688e
+ac4146df5392180febf6ec4b71ea279c
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-6fe7693fd71cc8a624c22a03c5682205
+cf62048967b47ab8f6570918ed183b54
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -685,7 +684,7 @@ dc518b92b212c43e945aee634a280f95
                    GHC.Types.True
                    -> case System.Environment.getArgs1 ipv of ds2 { (#,#) ipv2 ipv3 ->
                       Main.main2 ipv3 ipv2 } } }) -}
-4bcded3d3f0a6640bee6943c9d830c35
+1e117c9b86ceaf0e315fe2c9beb36f15
   main2 ::
     [GHC.Base.String]
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -729,7 +728,7 @@ dc518b92b212c43e945aee634a280f95
                         @ GHC.Prim.Any
                         (GHC.Types.[] @ GHC.Prim.Any)
                         eta }) -}
-f904b43d77339d8331999cddd28cecd0
+9a2e629ac8175346dd186be9d6ed98d6
   main3 ::
     [GHC.Base.String]
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -761,11 +760,11 @@ f904b43d77339d8331999cddd28cecd0
 691f68c92b15a4329d33b49894467405
   main4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "\" not found"#) -}
-64dc28e23e57cffcc216be226300a69f
+e92563d1d1ddc8d9d63d8e5b30ff11b1
   main5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
-                   "Pattern match failure in do expression at src/Main.hs:32:31-45"#) -}
-83986f59421526428147b553bf25b4dd
+                   "Pattern match failure in do expression at src/Main.hs:31:31-45"#) -}
+c0f588eaf7196585ebe1088b5aaf34c3
   main6 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -773,14 +772,14 @@ f904b43d77339d8331999cddd28cecd0
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
                    Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
-0f530d734a4641800a6746a571c3e7a2
+3e10f222a77a2ed0ff469d5f7f42edb3
   open :: [GHC.Base.String] -> GHC.Types.IO ()
   {- Arity: 2, Strictness: <S,1*U><L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.dispatch38
                   `cast`
                 (<[GHC.Base.String]>_R ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-4541d7b4841a548e2ec08d299c7a90c9
+97bcfc7121d260b4825d77d5b8fc5a54
   remove :: [GHC.Base.String] -> GHC.Types.IO ()
   {- Arity: 2, Strictness: <S,1*U><L,U>,
      Unfolding: InlineRule (0, True, True)
