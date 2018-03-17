@@ -4,12 +4,6 @@ import System.Directory
 import System.IO
 import System.Process
 
-
-import AppModules
-
-
-
-
 import qualified Data.List as DL
 
 fileName :: FilePath
@@ -17,7 +11,6 @@ fileName = "/home/henry/HENFILES/.webLinks"
 
 main :: IO ()
 main = do
-
     fileExist <- doesFileExist fileName
     if (not fileExist)
     then writeFile fileName ""
